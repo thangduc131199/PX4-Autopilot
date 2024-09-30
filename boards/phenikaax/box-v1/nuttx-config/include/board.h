@@ -217,56 +217,31 @@
 
 
 /* UART/USART */
-#define GPIO_USART2_TX   GPIO_USART2_TX_2      /* PD5 */
-#define GPIO_USART2_RX   GPIO_USART2_RX_2      /* PD6 */
-#define GPIO_USART2_CTS  GPIO_USART2_CTS_NSS_2 /* PD3 */
-#define GPIO_USART2_RTS  GPIO_USART2_RTS_2     /* PD4 */
+#define GPIO_USART1_TX         GPIO_USART1_TX_1      /* PA9 */
+#define GPIO_USART1_RX         GPIO_USART1_RX_1      /* PA10 */
 
-#define GPIO_USART3_TX   GPIO_USART3_TX_2      /* PD8  */
-#define GPIO_USART3_RX   GPIO_USART3_RX_2      /* PD9  */
-#define GPIO_USART3_CTS  GPIO_USART3_CTS_NSS_2 /* PD11 */
-#define GPIO_USART3_RTS  GPIO_USART3_RTS_2     /* PD12 */
+#define GPIO_UART4_TX          GPIO_UART4_TX_5       /* PD1 */
+#define GPIO_UART4_RX          GPIO_UART4_RX_5       /* PD0 */
+#define GPIO_UART4_RS485_DIR   GPIO_UART4_RTS_1      /* PA15 */
 
-#define GPIO_UART4_TX    GPIO_UART4_TX_2       /* PA0 */
-#define GPIO_UART4_RX    GPIO_UART4_RX_2       /* PA1 */
+#define GPIO_USART6_TX         GPIO_USART6_TX_1      /* PC6 */
+#define GPIO_USART6_RX         GPIO_USART6_RX_1      /* PC7 */
+#define GPIO_USART6_RS485_DIR   GPIO_USART6_RTS_2      /* PG8 */
 
-#define GPIO_USART6_TX   GPIO_USART6_TX_1      /* PC6 */
-#define GPIO_USART6_RX   GPIO_USART6_RX_1      /* PC7 */
-
-#define GPIO_UART7_TX    GPIO_UART7_TX_3       /* PE8 */
-#define GPIO_UART7_RX    GPIO_UART7_RX_3       /* PE7 */
-
-#define GPIO_UART8_TX    GPIO_UART8_TX_1       /* PE1 */
-#define GPIO_UART8_RX    GPIO_UART8_RX_1       /* PE0 */
+#define GPIO_UART8_TX          GPIO_UART8_TX_1       /* PE1 */
+#define GPIO_UART8_RX          GPIO_UART8_RX_1       /* PE0 */
+#define GPIO_UART8_RS485_DIR   GPIO_UART8_RTS_0      /* PD15 */
 
 
 /* CAN */
-#define GPIO_CAN1_RX     GPIO_CAN1_RX_3        /* PD0  */
-#define GPIO_CAN1_TX     GPIO_CAN1_TX_3        /* PD1  */
-
-#define GPIO_CAN2_RX     GPIO_CAN2_RX_1        /* PB12 */
-#define GPIO_CAN2_TX     GPIO_CAN2_TX_2        /* PB6  */
-
-
-/* SPI */
-#define ADJ_SLEW_RATE(p) (((p) & ~GPIO_SPEED_MASK) | (GPIO_SPEED_2MHz))
-
-#define GPIO_SPI1_SCK    ADJ_SLEW_RATE(GPIO_SPI1_SCK_1) /* PA5  */
-#define GPIO_SPI1_MISO   GPIO_SPI1_MISO_1               /* PA6  */
-#define GPIO_SPI1_MOSI   GPIO_SPI1_MOSI_1               /* PA7  */
-
-#define GPIO_SPI2_SCK    ADJ_SLEW_RATE(GPIO_SPI2_SCK_4) /* PB13 */
-#define GPIO_SPI2_MISO   GPIO_SPI2_MISO_1               /* PB14 */
-#define GPIO_SPI2_MOSI   GPIO_SPI2_MOSI_1               /* PB15 */
-
-#define GPIO_SPI4_SCK    ADJ_SLEW_RATE(GPIO_SPI4_SCK_2) /* PE2  */
-#define GPIO_SPI4_MISO   GPIO_SPI4_MISO_2               /* PE5  */
-#define GPIO_SPI4_MOSI   GPIO_SPI4_MOSI_2               /* PE6  */
+#define GPIO_CAN1_RX     GPIO_CAN1_RX_1        /* PA11  */
+#define GPIO_CAN1_TX     GPIO_CAN1_TX_1        /* PA12  */
 
 
 /* I2C */
-#define GPIO_I2C1_SCL GPIO_I2C1_SCL_2       /* PB8  */
-#define GPIO_I2C1_SDA GPIO_I2C1_SDA_2       /* PB9  */
+#define GPIO_I2C1_SCL GPIO_I2C1_SCL_1       /* PB6  */
+#define GPIO_I2C1_SDA GPIO_I2C1_SDA_2       /* PB7  */
 
-#define GPIO_I2C2_SCL GPIO_I2C2_SCL_1       /* PB10 */
-#define GPIO_I2C2_SDA GPIO_I2C2_SDA_1       /* PB11 */
+
+#define GPIO_I2C4_SCL GPIO_I2C4_SCL_5       /* PB8  */
+#define GPIO_I2C4_SDA GPIO_I2C4_SDA_5       /* PB9  */
