@@ -47,7 +47,7 @@ else()
 	add_library(drivers_board
 		i2c.cpp
 		init.c
-		led.c
+		# led.c
 		spi.cpp
 		timer_config.cpp
 		usb.c
@@ -57,7 +57,7 @@ else()
 		PRIVATE
 			arch_io_pins
 			arch_spi
-			drivers__led
+			# drivers__led
 			nuttx_arch
 			nuttx_drivers
 			px4_layer

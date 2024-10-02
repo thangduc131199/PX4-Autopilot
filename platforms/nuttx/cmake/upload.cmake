@@ -58,6 +58,7 @@ if(${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Linux")
 		/dev/serial/by-id/usb-Hex_ProfiCNC*
 		/dev/serial/by-id/usb-UVify*
 		/dev/serial/by-id/usb-ArduPilot*
+		/dev/serial/by-id/usb-FTDI_FT232R_USB_UART*
 		)
 
 elseif(${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Darwin")

@@ -55,7 +55,7 @@ __EXPORT void board_on_reset(int status) {}
 __EXPORT void stm32_boardinitialize(void)
 {
 	/* configure USB interfaces */
-	stm32_configgpio(GPIO_OTGFS_VBUS);
+	// stm32_configgpio(GPIO_OTGFS_VBUS);
 }
 
 __EXPORT int board_app_initialize(uintptr_t arg)

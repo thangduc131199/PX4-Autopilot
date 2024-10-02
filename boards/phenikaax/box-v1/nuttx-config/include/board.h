@@ -217,12 +217,12 @@
 
 
 /* UART/USART */
-#define GPIO_USART1_TX         GPIO_USART1_TX_1      /* PA9 */
-#define GPIO_USART1_RX         GPIO_USART1_RX_1      /* PA10 */
+#define GPIO_USART1_TX         GPIO_USART1_TX_2      /* PA9  */
+#define GPIO_USART1_RX         GPIO_USART1_RX_2      /* PA10 */
 
-#define GPIO_UART4_TX          GPIO_UART4_TX_5       /* PD1 */
-#define GPIO_UART4_RX          GPIO_UART4_RX_5       /* PD0 */
-#define GPIO_UART4_RS485_DIR   GPIO_UART4_RTS_1      /* PA15 */
+#define GPIO_UART2_TX          GPIO_USART2_TX_2       /* PD5 */
+#define GPIO_UART2_RX          GPIO_USART2_RX_2       /* PD6 */
+#define GPIO_UART2_RS485_DIR   GPIO_USART2_RTS_2      /* PD4 */
 
 #define GPIO_USART6_TX         GPIO_USART6_TX_1      /* PC6 */
 #define GPIO_USART6_RX         GPIO_USART6_RX_1      /* PC7 */
@@ -234,8 +234,8 @@
 
 
 /* CAN */
-#define GPIO_CAN1_RX     GPIO_CAN1_RX_1        /* PA11  */
-#define GPIO_CAN1_TX     GPIO_CAN1_TX_1        /* PA12  */
+#define GPIO_CAN1_RX     GPIO_CAN1_RX_3        /* PD0  */
+#define GPIO_CAN1_TX     GPIO_CAN1_TX_3        /* PD1  */
 
 
 /* I2C */

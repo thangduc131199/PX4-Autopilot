@@ -927,6 +927,7 @@ def main():
 
                         # wait for the close, without we might run into Serial I/O Error 6
                         time.sleep(0.3)
+                # print("ahihi")
 
                 if not found_bootloader:
                     # Go to the next port
@@ -934,21 +935,25 @@ def main():
 
                 try:
                     # ok, we have a bootloader, try flashing it
+                    print(args.firmware)
                     up.upload(args.firmware, force=args.force, boot_delay=args.boot_delay, force_erase=args.force_erase)
 
                     # if we made this far without raising exceptions, the upload was successful
                     successful = True
 
                 except RuntimeError as e:
+                    print("ahihi")
                     # print the error
                     print(f"\n\nError: {e}")
 
                 except FirmwareNotSuitableException:
+                    print("FirmwareNotSuitableException")
                     unsuitable_board = True
                     up.close()
                     continue
 
                 except IOError:
+                    print("IOError")
                     up.close()
                     continue
 
