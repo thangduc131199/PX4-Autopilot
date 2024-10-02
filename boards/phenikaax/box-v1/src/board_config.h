@@ -45,7 +45,7 @@
 #include <stm32_gpio.h>
 
 /* LEDs */
-#define GPIO_nLED_AMBER        /* PG5 */  (GPIO_OUTPUT|GPIO_OPENDRAIN|GPIO_SPEED_50MHz|GPIO_OUTPUT_SET|GPIO_PORTG|GPIO_PIN5)
+#define GPIO_nLED_AMBER     (GPIO_OUTPUT|GPIO_OPENDRAIN|GPIO_SPEED_50MHz|GPIO_OUTPUT_SET|GPIO_PORTG|GPIO_PIN5)  /* PG5 */
 
 #define BOARD_HAS_CONTROL_STATUS_LEDS      1
 #define BOARD_ARMED_LED  LED_AMBER
@@ -73,7 +73,8 @@
 #define BOARD_ADC_OPEN_CIRCUIT_V     (5.6f)
 
 
-/* PWM input driver. Use FMU AUX5 pins attached to timer4 channel 2 */
+/* PWM */
+#define DIRECT_PWM_OUTPUT_CHANNELS  9
 
 
 /* USB */

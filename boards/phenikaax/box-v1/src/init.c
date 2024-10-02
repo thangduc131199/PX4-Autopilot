@@ -77,14 +77,14 @@ __END_DECLS
 __EXPORT void board_peripheral_reset(int ms)
 {
 	/* Power off Interfaces */
-	stm32_gpiowrite(GPIO_nVDD_5V_PERIPH_EN, true);
+	// stm32_gpiowrite(GPIO_nVDD_5V_PERIPH_EN, true);
 
 	/* wait for the peripheral rail to reach GND */
 	usleep(ms * 1000);
 	syslog(LOG_DEBUG, "reset done, %d ms\n", ms);
 
 	/* re-enable power */
-	stm32_gpiowrite(GPIO_nVDD_5V_PERIPH_EN, false);
+	// stm32_gpiowrite(GPIO_nVDD_5V_PERIPH_EN, false);
 }
 
 /************************************************************************************
@@ -126,7 +126,7 @@ __EXPORT void stm32_boardinitialize(void)
 	/* configure pins */
 	const uint32_t gpio[] = PX4_GPIO_INIT_LIST;
 	px4_gpio_init(gpio, arraySize(gpio));
-	board_control_spi_sensors_power_configgpio();
+	// board_control_spi_sensors_power_configgpio();
 
 	/* configure LEDs */
 	board_autoled_initialize();
